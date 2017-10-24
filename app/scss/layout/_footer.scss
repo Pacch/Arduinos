@@ -2,45 +2,99 @@ footer{
     background: #00979D;
     color: white;
     .menu-footer{
-        padding: 45px 40px 36px;
         display: flex;
+        padding: 45px 40px 0;
         ul{
-            padding: 0 40px 0 0;
+            padding:0 65px 0 0;
             li{
-                margin: 20px 0;
+                width: 121px;
+                font-size: 13px;
+                margin-bottom: 14px;
+                letter-spacing: 1.5px;
                 a{
-
+                    
+                    text-transform: initial;
                 }
+            }
+            li:first-child{
+
             }
         }
         .suscribcion{
             display: flex;
-            .container{
-                span{
-                    width: 100%;
-                }
-                input{
-                }
-                button{
-                }
+            flex-wrap: wrap;
+            max-width: 600px;
+            width: 600px;
+            height: 80px;
+            label{
+                width: 100%;
+                letter-spacing: 1px;
+            }
+            input{
+                height: 45px;
+                border: none;
+                letter-spacing: 1px;
+                
+            }
+            .textbox{
+                padding: 0 15px;
+                width: calc(100% - 100px);
+                font-size: 12px;
+                color: #434f54;
+            }
+            .button{
+                font-size: 12px;
+                letter-spacing: 1px;
+                width: 100px;
+                background: #008184;
+                color: white;
+                letter-spacing: 1px;
+                border-bottom: 4px solid #005C5F;
+                
             }
         }
         .flecha-superior{
+            width: calc(100% - 846px);
+            padding-top: 27px;
+            margin: 0 20px 0 150px;
+            display: flex;
+            justify-content: flex-end;
+
+            i{
+            }
         }
     }
     .menu-footer-sub{
-        padding: 45px 40px 36px;
+        margin-top: 30px;
+        padding: 0 40px 36px;
         display: flex;
+        align-items: center;
+        justify-content: space-between;
         span{
+            font-size: 13px;
+            letter-spacing: 1.5px;
         }
         nav{
             ul{
                 display: flex;
                 padding: 0;
                 li{
+                    padding: 0 7px;
                     a{
-
+                        
+                        i{
+                            width: 28px;
+                            height: 28px;
+                            background: #005C5F;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
                     }
+                }
+                li:last-child{
+                    margin:0 15px 0 0;
                 }
             }
         }
