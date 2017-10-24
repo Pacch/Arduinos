@@ -1,0 +1,46 @@
+header{
+    background: $verde;
+    color: white;
+    height: 120px;
+    .container-header{
+        display: flex;
+        height: inherit;
+        .header-logo{
+            padding: 20px;
+            align-self: center;
+            flex: 1;
+            img{
+            height: 100px;
+            }
+        }
+        .nav-header{
+            flex: 2;
+            align-self: flex-end;
+            ul{
+                font-family: 'Roboto', sans-serif;
+                display: flex;
+                font-weight: 600;
+                li{
+                    padding: 0 20px;
+                    a{
+
+                    }
+                }
+            }
+        }
+        .header-login{
+            display: flex;
+            justify-content: flex-end;
+            flex: 1;
+            i{
+                padding: 20px 20px;
+            }
+            span{
+                font-family: 'Roboto', sans-serif;
+                padding: 20px 20px;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+    }
+}

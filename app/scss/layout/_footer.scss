@@ -1,0 +1,48 @@
+footer{
+    background: #00979D;
+    color: white;
+    .menu-footer{
+        padding: 45px 40px 36px;
+        display: flex;
+        ul{
+            padding: 0 40px 0 0;
+            li{
+                margin: 20px 0;
+                a{
+
+                }
+            }
+        }
+        .suscribcion{
+            display: flex;
+            .container{
+                span{
+                    width: 100%;
+                }
+                input{
+                }
+                button{
+                }
+            }
+        }
+        .flecha-superior{
+        }
+    }
+    .menu-footer-sub{
+        padding: 45px 40px 36px;
+        display: flex;
+        span{
+        }
+        nav{
+            ul{
+                display: flex;
+                padding: 0;
+                li{
+                    a{
+
+                    }
+                }
+            }
+        }
+    }
+}
