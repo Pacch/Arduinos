@@ -3,7 +3,7 @@ Ordenador de serie
 
 Proyecto
 -------------------
-[Enlace al demo](https://renzotev.github.io/ordenamiento/app/index.html)
+[Enlace al demo](https://pacch.github.io/proyecto_jose/app/index.html)
 
 Instalación(DESARROLLO)
 -----------------------
@@ -18,23 +18,22 @@ Resumen del proyecto
 --------------------
 El proyecto ha sido realizado desde 0 con:
 * Sass
-* TypeScript
 * Pug ~~Jade~~
 * Gulp
+* JQuery
 
 Librerias externas:
 No se usaron librerias externas a excepción de:
-* normalize.css
+
 * Librerias para compilar con gulp
-* Algoritmos de ordenamiento de toda la vida(Ordenamiento por mezcla) para evitar usar el sort de javascript
 
-Nota:
-No usé JQuery debido a que el proyecto es muy pequeño para una libreria tan grande ya que tambien tenemos librerías que solucionan este tipo de problemas como las siguientes:
+IMPORTANTE
+--------------------
+El diseño de esta web no me pertenece,solo lo hago como referencia para maquetar webs.
 
-* [MixItUp](https://www.kunkalabs.com/mixitup/)
-* [Isotope](http://isotope.metafizzy.co/)
+creditos a la siguiente web 
 
-Que dependiendo del proyecto es mas sencillo usar alguna de estas librerias
+[Enlace a la web original](https://www.arduino.cc/)
 
 Estructura de carpetas
 ----------------------
@@ -45,8 +44,8 @@ ordenador de serie/
 |  |- css/
 |  |  |- style.css (CSS compilado)
 
-|  |- fonts/
-|  |  |- ... (Icomoon fonts)
+// |  |- fonts/
+// |  |  |- ... (Icomoon fonts)
 
 |  |- js/
 |  |  |- app.js (Javascript transpilado y concatenado)
@@ -58,11 +57,11 @@ ordenador de serie/
 |  |  - vendor/
 |  |  |- style.scss (includes)
 
-|  |- ts/ (Archivos TypeScript)
-|  |  |- app.ts
-|  |  |- Form.ts
-|  |  |- Sort.ts
-|  |  |- Validate.ts
+// |  |- ts/ (Archivos TypeScript)
+// |  |  |- app.ts
+// |  |  |- Form.ts
+// |  |  |- Sort.ts
+// |  |  |- Validate.ts
 
 |  |- views/ (Archivos Pug ~~Jade~~)
 |  |  - inc/ (Header, footer)
