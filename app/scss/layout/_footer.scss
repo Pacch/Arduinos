@@ -12,8 +12,11 @@ footer{
                 margin-bottom: 14px;
                 letter-spacing: 1.5px;
                 a{
-                    
+                    color: white;
                     text-transform: initial;
+                    &:hover{
+                        color: #f1c40f;
+                    }
                 }
             }
             li:first-child{
@@ -59,8 +62,13 @@ footer{
             margin: 0 20px 0 150px;
             display: flex;
             justify-content: flex-end;
-
-            i{
+            a{
+                color: white;
+                &:hover{
+                   color: #f1c40f;
+                }
+                i{
+                }
             }
         }
     }
@@ -81,7 +89,7 @@ footer{
                 li{
                     padding: 0 7px;
                     a{
-                        
+                        color: white;
                         i{
                             width: 28px;
                             height: 28px;
@@ -90,6 +98,29 @@ footer{
                             display: flex;
                             align-items: center;
                             justify-content: center;
+                        }
+                        &:hover{
+                            .fa-twitter{
+                                background: #54C1F2;
+                            }
+                            .fa-google-plus{
+                                background: #D34836;
+                            }
+                            .fa-facebook{
+                                background: #3F65B6;
+                            }
+                            .fa-youtube{
+                                background: #EC1E12;
+                            }
+                            .fa-instagram{
+                                background: #714CC3;
+                            }
+                            .fa-flickr{
+                                background: #FF47A4;
+                            }
+                            .fa-github{
+                                background: black;
+                            }
                         }
                     }
                 }
