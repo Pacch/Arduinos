@@ -13,14 +13,41 @@
         <div class="header-logo"><a class="container-logos" href="#"><img class="arduino-logo" src="img/arduino_logo.svg"><img class="arduino-logo-compressed" src="img/arduino_logo_compressed.svg"></a></div>
         <div class="header-menu">
           <div class="container-menu">
-            <ul>
+            <ul class="menu">
               <li><a href="#">home</a></li>
               <li><a href="#">buy</a></li>
               <li><a href="#">software</a></li>
-              <li><a href="#">products</a></li>
-              <li><a href="#">learning</a></li>
-              <li><a href="#">community</a></li>
-              <li><a href="#">support</a></li>
+              <li class="submenu"><a href="#">products</a>
+                <ul class="submenu-menu">
+                  <li><a href="#">arduino</a></li>
+                  <li><a href="#">atheart</a></li>
+                  <li><a href="#">certified</a></li>
+                </ul>
+              </li>
+              <li class="submenu"><a href="#">learning</a>
+                <ul class="submenu-menu">
+                  <li><a href="#">getting started</a></li>
+                  <li><a href="#">tutorials</a></li>
+                  <li><a href="#">reference</a></li>
+                  <li><a href="#">education</a></li>
+                </ul>
+              </li>
+              <li class="submenu"><a href="#">community</a>
+                <ul class="submenu-menu">
+                  <li><a href="#">forum</a></li>
+                  <li><a href="#">blog</a></li>
+                  <li><a href="#">project hub</a></li>
+                  <li><a href="#">user groups</a></li>
+                  <li><a href="#">playground</a></li>
+                </ul>
+              </li>
+              <li class="submenu"><a href="#">support</a>
+                <ul class="submenu-menu">
+                  <li><a href="#">faq</a></li>
+                  <li><a href="#">contact us</a></li>
+                  <li><a href="#">store support</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
           <div class="container-login"><a class="search" href="#"><i class="fa fa-search fa-lg" aria-hidden="true"></i></a><a class="shoping" href="#"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></a><span><a class="hover-blanco" href="#">sign in</a></span><a class="burguer-menu" href="#"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a></div>
@@ -286,8 +313,10 @@
         </ul>
         <div class="suscribcion">
           <label>NEWSLETTER</label>
-          <input class="textbox" type="text" placeholder="ENTER YOUR EMAIL TO SIGN UP">
-          <input class="button" type="submit" value="SUBSCRIBE">
+          <div class="formulario">
+            <input class="textbox" type="text" placeholder="ENTER YOUR EMAIL TO SIGN UP">
+            <input class="button" type="submit" value="SUBSCRIBE">
+          </div>
         </div>
       </div>
       <div class="menu-footer-sub"><span>© 2017 Arduino</span>

@@ -8,9 +8,11 @@ $(document).ready(function(){
         $('.container-whats-arduino').show();
         $('html,body').animate({scrollTop: 0}, 600);
      });
- });
+     $('.flecha-superior').click(function(){
+        $('html,body').animate({scrollTop: 0}, 600);
+     });
 
- console.log($(document).scrollTop());
+ });
 
  $(window).scroll(function() {
     if($(document).scrollTop() >= 37) {
@@ -19,6 +21,10 @@ $(document).ready(function(){
         $('.arduino-logo').addClass('scroll-logo');
         $('.arduino-logo-compressed').addClass('scroll-logo-compressed');
         $('.container-logos').addClass('scroll');
+        $('.container-menu').addClass('scroll-menu');
+        $('.container-login').addClass('scroll');
+        $('.submenu-menu').addClass('scroll');
+
 
     }
     else{
@@ -27,5 +33,8 @@ $(document).ready(function(){
         $('.arduino-logo').removeClass('scroll-logo');
         $('.arduino-logo-compressed').removeClass('scroll-logo-compressed');
         $('.container-logos').removeClass('scroll');
+        $('.container-menu').removeClass('scroll-menu');
+        $('.container-login').removeClass('scroll');
+        $('.submenu-menu').removeClass('scroll');
     }
  });

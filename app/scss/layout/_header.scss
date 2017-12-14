@@ -4,6 +4,7 @@ header{
     @media screen and (min-width: 1025px) {
         height: 120px;
         margin: 0 0 40px 0;
+        transition: .5s;
     }
     .container-header{
         background: $verde;
@@ -14,7 +15,6 @@ header{
         z-index: 1000;
         .header-logo{
             height: inherit;
-            flex-grow: 1;
             a{
                 display: flex;
                 height: 100%;
@@ -32,24 +32,28 @@ header{
                     display: none;
                     @media screen and (min-width: 1025px) {
                         display: initial;
-                        height:100px
+                        height:100px;
+                        transition: .1s;
                     }
                 }
                 .arduino-logo-compressed{
                     height: 30px;
                     @media screen and (min-width: 1025px) {
                         display: none;
+                        transition: .1s;
                     }
                 }
                 .scroll-logo{
                     @media screen and (min-width: 1025px) {
                         display: none;
+                        transition: .1s;
                     }
                 }
 
                 .scroll-logo-compressed{
                     @media screen and (min-width: 1025px) {
                         display: initial;
+                        transition: .1s;
                     }
                 }
 
@@ -59,47 +63,94 @@ header{
                     width: 112px;
                     padding: 0 20px;
                     margin-right: 30px;
+                    transition: .1s;
                 }
             }
         }
         .header-menu{
-            flex: 1;
+            flex-grow: 1;
             display: flex;
             align-items: center;
             @media screen and (min-width: 1025px) {
                 flex-direction: column-reverse;
                 align-items: initial;
-                flex: none;
-            }
-            @media screen and (min-width: 1201px) {
-                flex-grow: 1;
             }
             .container-menu{
-                ul{
+                display: flex;
+                justify-content: flex-end;
+                @media screen and (min-width: 1201px) {
+                    justify-content: center;
+                }
+
+                .menu{
                     display: none;
                     @media screen and (min-width: 1025px) {
                         display: flex;
                         padding: 0 10px 0 0;
                     }
+                    @media screen and (min-width: 1201px) {
+                        padding-right: 200px;
+                        justify-content: center;
+                    }
                     li{
                         display: flex;
+                        &:hover{
+                            background: #7fcbcd;
+                            color: #005c5f;
+                        }
                         a{
                             color: white;
-                            padding: 18px 10px;
+                            padding: 16px 10px;
                             font-size: 13px;
                             letter-spacing: 2px;
                             font-weight: 600;
-                            &:first-child{
-                                padding: 20px 10px 20px 0;
-                            }
-                            &:last-child{
-                                padding: 20px 10px 20px 10px;
-                            }
-                            &:hover{
-                                background: #7fcbcd;
-                                color: #005c5f;
+                        }
+                    }
+                    .submenu{
+                        position:relative;
+                        &:hover{
+                            ul{
+                                display: flex;
+                                flex-direction: column;
                             }
                         }
+                        .submenu-menu{
+                            position: absolute;
+                            display: none;
+                            top: 46px;
+                            padding: 0;
+                            li{
+                                width: max-content;
+                                border-bottom: 1px solid #a5f2ee;
+                                a{
+                                    background: #7fcbcd;
+                                    color: #005c5f;
+                                    font-size: 11px;
+                                    letter-spacing: 3px;
+                                    font-weight: 600;
+                                    &:hover{
+                                        background: $verde;
+                                        color: white;
+                                    }
+                                }
+                            &:last-child{
+                                border-bottom: none;
+                            }
+                            }
+
+                        }
+                        .scroll{
+                            top: 54px;
+                        }
+                    }
+                }
+            }
+            .scroll-menu{
+                @media screen and(min-width:1025px) {
+                    flex: 1;
+                    justify-content: center;
+                    .menu{
+                        padding: 0;
                     }
                 }
             }
@@ -164,11 +215,17 @@ header{
 
                 }
             }
+            .scroll{
+                @media screen and (min-width: 1025px) {
+                    flex: none;
+                }
+            }
         }
         .scroll{
             @media screen and (min-width: 1025px) {
                 flex-direction: row;
                 flex-grow: 1;
+                transition: .1s;
             }
         }
     }
@@ -176,6 +233,7 @@ header{
 .scroll{
     @media screen and (min-width: 1025px) {
         height: 54px;
+        transition: .5s;
     }
 
 }
