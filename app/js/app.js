@@ -8,11 +8,44 @@ $(document).ready(function(){
         $('.container-whats-arduino').show();
         $('html,body').animate({scrollTop: 0}, 600);
      });
+
      $('.flecha-superior').click(function(){
         $('html,body').animate({scrollTop: 0}, 600);
      });
 
- });
+     $('.burguer-menu').click(function(){
+        $('.menu').slideToggle();
+     });
+
+     $('.menu-option-products').click(function(){
+        $('.menu-option-products .submenu-menu').slideToggle();
+        $('.menu-option-learning .submenu-menu').slideUp();
+        $('.menu-option-support .submenu-menu').slideUp();
+        $('.menu-option-community .submenu-menu').slideUp();
+     });
+
+     $('.menu-option-community').click(function(){
+        $('.menu-option-community .submenu-menu').slideToggle();
+        $('.menu-option-products .submenu-menu').slideUp();
+        $('.menu-option-learning .submenu-menu').slideUp();
+        $('.menu-option-support .submenu-menu').slideUp();
+     });
+
+     $('.menu-option-learning').click(function(){
+        $('.menu-option-learning .submenu-menu').slideToggle();
+        $('.menu-option-products .submenu-menu').slideUp();
+        $('.menu-option-community .submenu-menu').slideUp();
+        $('.menu-option-support .submenu-menu').slideUp();
+     });
+
+     $('.menu-option-support').click(function(){
+        $('.menu-option-support .submenu-menu').slideToggle();
+        $('.menu-option-products .submenu-menu').slideUp();
+        $('.menu-option-learning .submenu-menu').slideUp();
+        $('.menu-option-community .submenu-menu').slideUp();
+     });
+
+    });
 
  $(window).scroll(function() {
     if($(document).scrollTop() >= 37) {

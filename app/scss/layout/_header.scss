@@ -1,4 +1,4 @@
-header{
+.header{
     height: 56px;
     margin: 0 0 20px 0;
     @media screen and (min-width: 1025px) {
@@ -76,68 +76,178 @@ header{
                 align-items: initial;
             }
             .container-menu{
-                display: flex;
-                justify-content: flex-end;
+                // display: none;
+
+                @media screen and (min-width: 1025px) {
+                    display: flex;
+                    justify-content: flex-end;
+                }
                 @media screen and (min-width: 1201px) {
                     justify-content: center;
                 }
-
                 .menu{
                     display: none;
+                    position: absolute;
+                    background: #7fcbcd;
+                    left: 0px;
+                    padding: 0;
+                    width: 100%;
+                    top: 56px;
+                    border-top: 1px solid #34AFB3;
+                    &::after{
+                        content: '';
+                        bottom: -52px;
+                        position: absolute;
+                        height: 52px;
+                        left: 0;
+                        width: 100%;
+                        background: #00979d;
+                        @media screen and (min-width:1025px) {
+                            content: none;
+                        }
+                    }
                     @media screen and (min-width: 1025px) {
                         display: flex;
                         padding: 0 10px 0 0;
+                        border-top: none;
+                        background: none;
+                        justify-content: flex-end;
                     }
                     @media screen and (min-width: 1201px) {
                         padding-right: 200px;
                         justify-content: center;
                     }
-                    li{
+                    .menu-option{
                         display: flex;
-                        &:hover{
+                        border-bottom: 1px solid #A5F2EE;
+                        justify-content: center;
+                        @media screen and (min-width:1025px){
+                            border-bottom: none;
+                            &:hover{
                             background: #7fcbcd;
                             color: #005c5f;
+                            }
+                        }
+                        &:nth-child(1){
+                            background: $verde;
+                            @media screen and (min-width:481px){
+                                display: none;
+                            }
+                            border-bottom:1px solid #34AFB3;
+                            a{
+                                color: white;
+                            }
+                        }
+                        &:nth-child(2){
+                            background: $verde;
+                            border-bottom: none;
+                            @media screen and (min-width:770px){
+                                display: none;
+                            }
+                            a{
+                                color: white;
+                            }
                         }
                         a{
-                            color: white;
-                            padding: 16px 10px;
+                            color: #005c5f;
+                            width: 100%;
+                            text-align: center;
+                            // height: 52px;
+                            padding: 18.5px 0;
+
                             font-size: 13px;
                             letter-spacing: 2px;
                             font-weight: 600;
+                            @media screen and (min-width:1025px){
+                                padding: 16px 10px;
+                            }
+                        }
+                    }
+                    .menu-input{
+                        position: relative;
+                        .input-search{
+                            width: calc(100% - 46px);
+                            background: #006d70;
+                            font-size: 13px;
+                            letter-spacing: 1px;
+                            padding-left: 20px;
+                            color: white;
+                            border: none;
+                            height: 32px;
+                            margin: 0 auto;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            outline: 0;
+
+                            &::placeholder {
+                            color: white;
+                            outline: 0;
+                            }
+                        }
+                        .search{
+                            position: absolute;
+                            cursor: pointer;
+                            padding: 0 10px;
+                            top: 10px;
+                            right: 22px;
+                            height: 32px;
+                            display: flex;
+                            align-items: center;
+                            color: white;
                         }
                     }
                     .submenu{
-                        position:relative;
-                        &:hover{
-                            ul{
-                                display: flex;
-                                flex-direction: column;
+                        display: flex;
+                        flex-wrap: wrap;
+                        // border-bottom: 1px solid #A5F2EE;
+                        @media screen and (min-width:1025px) {
+                            position:relative;
+                            &:hover{
+                                ul{
+                                    display: flex;
+                                    flex-direction: column;
+                                }
                             }
                         }
                         .submenu-menu{
-                            position: absolute;
-                            display: none;
-                            top: 46px;
+                            background: #ecf1f1;
                             padding: 0;
-                            li{
-                                width: max-content;
-                                border-bottom: 1px solid #a5f2ee;
+                            width: 100%;
+                            display: none;
+                            @media screen and (min-width:1025px) {
+                                position: absolute;
+                                top: 46px;
+                                width: initial;
+                            }
+                            .submenu-option{
+                                border-bottom: 1px solid #dae3e3;
+                                width: 100%;
+                                text-align: center;
+                                display: flex;
+                                align-items: center;
+                                @media screen and(min-width:1025px) {
+                                    width: max-content;
+                                    border-bottom: 1px solid #a5f2ee;
+                                }
                                 a{
-                                    background: #7fcbcd;
-                                    color: #005c5f;
+                                    // background: #7fcbcd;
+                                    padding: 10px 0;
+                                    color:#7f8c8d;
                                     font-size: 11px;
                                     letter-spacing: 3px;
                                     font-weight: 600;
-                                    &:hover{
-                                        background: $verde;
-                                        color: white;
+                                    text-align: center;
+                                    @media screen and (min-width:1025px){
+                                        &:hover{
+                                            background: $verde;
+                                            color: white;
+                                        }
                                     }
                                 }
-                            &:last-child{
-                                border-bottom: none;
+                                &:last-child{
+                                    border-bottom: none;
+                                }
                             }
-                            }
-
                         }
                         .scroll{
                             top: 54px;
@@ -165,7 +275,8 @@ header{
                     display: flex;
                     align-items: center;
                     color: white;
-                    padding: 0 20px;
+                    padding: 20px 20px;
+                    // padding: 0 20px;
                     height: 100%;
                     @media screen and (min-width: 1025px) {
                         align-items:initial;
@@ -175,12 +286,13 @@ header{
                 }
                 .search{
                     display: none;
-                    @media screen and (min-width: 480px) {
+                    @media screen and (min-width: 481px) {
                         display: flex;
                     }
 
                 }
                 .burguer-menu{
+                    cursor: pointer;
                     @media screen and (min-width:1025px) {
                         display: none;
                     }
@@ -197,7 +309,7 @@ header{
                     font-size: 14px;
                     font-weight: 600;
                     width: 100px;
-                    @media screen and (min-width: 780px) {
+                    @media screen and (min-width: 770px) {
                         display: initial;
                         width: initial;
 
