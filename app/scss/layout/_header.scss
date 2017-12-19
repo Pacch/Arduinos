@@ -107,7 +107,7 @@
                         }
                     }
                     @media screen and (min-width: 1025px) {
-                        display: flex;
+                        display: flex !important;
                         padding: 0 10px 0 0;
                         border-top: none;
                         background: none;
