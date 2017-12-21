@@ -16,6 +16,7 @@ $(document).ready(function(){
      $('.burguer-menu').click(function(){
         $('.menu').slideToggle();
      });
+
      $('.menu-option-products').click(function(){
         $('.menu-option-products .submenu-menu').slideToggle();
         $('.menu-option-learning .submenu-menu').slideUp();

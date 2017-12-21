@@ -248,25 +248,31 @@
 
             .naranja{
                 background: $naranja;
-                &:hover{
-                    .container-icono{
-                        box-shadow: inset -60px 1px #f39c12;
+                @media screen and (min-width: 1025px) {
+                    &:hover{
+                        .container-icono{
+                            box-shadow: inset -60px 1px #f39c12;
+                        }
                     }
                 }
             }
             .verde{
                 background: $verde;
-                &:hover{
-                    .container-icono{
-                        box-shadow: inset -60px 1px #7fcbcd;
+                @media screen and (min-width: 1025px) {
+                    &:hover{
+                        .container-icono{
+                            box-shadow: inset -60px 1px #7fcbcd;
+                        }
                     }
                 }
             }
             .plomo{
                 background: $plomo;
-                &:hover{
-                    .container-icono{
-                        box-shadow: inset -60px 1px #9e846d;
+                @media screen and (min-width: 1025px) {
+                    &:hover{
+                        .container-icono{
+                            box-shadow: inset -60px 1px #9e846d;
+                        }
                     }
                 }
             }
