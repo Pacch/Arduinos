@@ -1,9 +1,9 @@
-Ordenador de serie
+Arduinos
 =====================
 
 Proyecto
 -------------------
-[Enlace al demo](https://pacch.github.io/proyecto_jose/app/index.html)
+[Enlace al demo](https://pacch.github.io/Arduinos/app/)
 
 Instalación(DESARROLLO)
 -----------------------
@@ -48,7 +48,7 @@ ordenador de serie/
 // |  |  |- ... (Icomoon fonts)
 
 |  |- js/
-|  |  |- app.js (Javascript transpilado y concatenado)
+|  |  |- app.js (Jquery)
 
 |  |- scss/ (Archivos Sass)
 |  |  - base/
@@ -74,4 +74,4 @@ ordenador de serie/
 |- .gitignore (obviamos los modulos de node)
 |- gulpfile.js (listo para compilar el proyecto)
 |- package.json
-# proyecto_jose
+# proyecto_arduinos
