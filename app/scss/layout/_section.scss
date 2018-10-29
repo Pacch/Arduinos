@@ -14,7 +14,13 @@
     }
     .container-contenido{
         background: #ecf1f1;
-        margin: 0 0 20px;
+        transition: all 0.5s ease-in-out;
+        height: auto;
+        max-height: 0px;
+        // display: none;
+        &.active{
+            max-height: 1000px;
+        }
         .container-columnas{
             @media screen and (min-width: 720px) {
                 display: flex;
@@ -401,7 +407,7 @@
                         }
                     }
                 }
-            }
+        }
 
     }
     .container-principal{
